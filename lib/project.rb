@@ -1,10 +1,11 @@
 require 'pry'
 
 class Project
-  attr_reader :backers
+  attr_reader :title, :backers
 
-  def initialize(backers = [])
+  def initialize(title, backers = [])
+    @title = title
     @backers = backers
   end
 
-end 
+end
