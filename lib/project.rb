@@ -10,5 +10,6 @@ class Project
 
   def add_backer(newb = Backer.new)
     @backers << newb
+    newb.backed_projects << self
   end
 end
